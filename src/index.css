@@ -13,14 +13,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
 }
 
-a:hover {
-    color: #535bf2;
+html {
+    /* Firefox */
+    scrollbar-width: none;
 }
 
 body {
