@@ -1,1 +1,1 @@
-export * from './ProgrammingLanguageSideSection.tsx'
+export * from './ProgrammingLanguageSection.tsx'

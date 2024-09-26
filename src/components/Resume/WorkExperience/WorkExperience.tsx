@@ -1,32 +1,21 @@
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
 import { WorkExperienceItem, WorkExperienceTimeline } from './WorkExperienceTimeline.tsx'
 import moment from 'moment'
 import { WorkExperienceContents } from '../WorkExperienceContents.tsx'
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory'
-import { operateResume, selectResume, useAppDispatch, useAppSelector } from '../../../redux'
+import { selectResume, useAppSelector } from '../../../redux'
+import { SectionTitle } from '../SectionTitle'
 
 export function WorkExperience() {
     const workExperienceIndex = useAppSelector(selectResume.workExperienceIndex)
-    const dispatch = useAppDispatch()
-
-    function handleTitleClick() {
-        dispatch(operateResume.switchMainContentIndex('Work_Experience'))
-    }
 
     return (
         <Box>
-            <Box display="flex" alignItems="center" mb="0.25rem">
-                <WorkHistoryIcon />
-                <Typography
-                    fontSize="1.25rem"
-                    fontWeight="bold"
-                    marginLeft="0.5rem"
-                    sx={{ cursor: 'pointer' }}
-                    onClick={handleTitleClick}
-                >
-                    Work Experience
-                </Typography>
-            </Box>
+            <SectionTitle
+                icon={<WorkHistoryIcon />}
+                title="Work Experience"
+                mainContentIndex="Work_Experience"
+            />
             <Box display="flex">
                 <WorkExperienceContents flex={2} workExperienceIndex={workExperienceIndex} />
                 <WorkExperienceTimeline

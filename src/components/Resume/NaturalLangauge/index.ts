@@ -1,1 +1,1 @@
-export * from './NaturalLanguageSideSection.tsx'
+export * from './NaturalLanguageSection.tsx'

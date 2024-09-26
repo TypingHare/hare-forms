@@ -1,10 +1,10 @@
 import { ResumeMainPage } from '../ResumeMainPage'
-import { NaturalLanguageSideSection } from './NaturalLanguageSideSection.tsx'
+import { NaturalLanguageSection } from './NaturalLanguageSection.tsx'
 
 export function NaturalLanguagePage() {
     return (
         <ResumeMainPage index="Natural_Language">
-            <NaturalLanguageSideSection />
+            <NaturalLanguageSection />
         </ResumeMainPage>
     )
 }
