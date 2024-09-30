@@ -2,7 +2,7 @@
  * The basename (or root path) of this project. On a website that contains multiple applications,
  * root paths are used to differentiate them.
  */
-export const BASENAME = '/forms'
+export const BASENAME = ''
 
 export const Url = {
     HOME: '/',
