@@ -1,11 +1,11 @@
 import { Box, BoxProps } from '@mui/material'
-import { Take2HealthContent } from './WorkExperience/Contents/Take2HealthContent.tsx'
-import { JuYingTongContent } from './WorkExperience/Contents/JuYingTongContent.tsx'
+import { Take2HealthContent } from './Contents/Take2HealthContent.tsx'
+import { JuYingTongContent } from './Contents/JuYingTongContent.tsx'
 import { Fragment } from 'react'
 import { useDispatch } from 'react-redux'
-import { operateResume } from '../../redux'
-import { ExcellentEducationContent } from './WorkExperience/Contents/ExcellentEducationContent.tsx'
-import { ComputerRepairTeamContent } from './WorkExperience/Contents/ComputerRepairTeamContent.tsx'
+import { operateResume } from '../../../redux'
+import { ExcellentEducationContent } from './Contents/ExcellentEducationContent.tsx'
+import { ComputerRepairTeamContent } from './Contents/ComputerRepairTeamContent.tsx'
 
 export function WorkExperienceContents(props: WorkExperienceContentsProps) {
     const { workExperienceIndex, ...otherProps } = props

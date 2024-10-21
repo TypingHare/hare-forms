@@ -34,7 +34,7 @@ export function DesktopNavigationBar() {
                 <Toolbar>
                     <Logo />
                     <Box ml="auto" display="flex" gap="1em">
-                        {['HOME', 'RESUME', 'WORKS', 'CONTACT'].map((label) => (
+                        {['HOME', 'RESUME', 'PORTFOLIO', 'RECORDS', 'CONTACT'].map((label) => (
                             <NavigationBarLink
                                 key={label}
                                 label={label}

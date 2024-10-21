@@ -14,7 +14,7 @@ export function IntroductionSection() {
                 James Chen
             </Typography>
             <Typography fontWeight="bold" color={palette.secondary.main}>
-                Junior Web Developer
+                Junior Web Developer & Software Engineer
             </Typography>
             <Typography mt="0.5rem">
                 I am a computer science student with five years of web development experience.

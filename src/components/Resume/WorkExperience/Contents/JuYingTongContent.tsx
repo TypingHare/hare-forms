@@ -1,6 +1,6 @@
-import { WorkExperienceContent, WorkExperiencePageProps } from './WorkExperienceContent.tsx'
+import { WorkExperienceContent, WorkExperienceContentProps } from './WorkExperienceContent.tsx'
 
-export function JuYingTongContent(props: WorkExperiencePageProps) {
+export function JuYingTongContent(props: WorkExperienceContentProps) {
     return (
         <WorkExperienceContent title="Ju Ying Tong (Technology Startup)" {...props}>
             <ul>

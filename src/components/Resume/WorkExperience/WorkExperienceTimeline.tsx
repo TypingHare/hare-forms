@@ -56,8 +56,8 @@ export function WorkExperienceTimeline(props: ExperienceTimelineProps) {
                                     <AccessTimeFilledIcon
                                         sx={{ marginRight: '0.25em', fontSize: '1em' }}
                                     />
-                                    {moment(startDate).format('MM/YYYY')}-
-                                    {moment(endDate).format('MM/YYYY')}
+                                    {moment(startDate).format('MM/YYYY')} -
+                                    {endDate ? moment(endDate).format('MM/YYYY') : 'now'}
                                 </Box>
                                 <Box>
                                     <PinDropIcon sx={{ marginRight: '0.25em', fontSize: '1em' }} />
@@ -83,5 +83,5 @@ export interface WorkExperienceItem {
     jobTitle: string
     location: string
     startDate: Date
-    endDate: Date
+    endDate: Date | null
 }

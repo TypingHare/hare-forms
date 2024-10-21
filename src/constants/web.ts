@@ -7,7 +7,8 @@ export const BASENAME = ''
 export const Url = {
     HOME: '/',
     RESUME: '/resume',
-    WORKS: '/works',
+    PORTFOLIO: '/portfolio',
+    RECORDS: '/records',
     CONTACT: '/contact',
 } as const
 

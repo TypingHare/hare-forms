@@ -1,13 +1,13 @@
 import { Box } from '@mui/material'
 import { WorkExperienceItem, WorkExperienceTimeline } from './WorkExperienceTimeline.tsx'
 import moment from 'moment'
-import { WorkExperienceContents } from '../WorkExperienceContents.tsx'
+import { WorkExperienceContents } from './WorkExperienceContents.tsx'
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory'
 import { selectResume, useAppSelector } from '../../../redux'
 import { SectionTitle } from '../SectionTitle'
 
 export function WorkExperience() {
-    const workExperienceIndex = useAppSelector(selectResume.workExperienceIndex)
+    const workExperienceIndex = useAppSelector(selectResume.workExperienceItemIndex)
 
     return (
         <Box>

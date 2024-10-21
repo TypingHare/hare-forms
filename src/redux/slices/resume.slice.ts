@@ -3,14 +3,16 @@ import { RootState } from '../store.ts'
 
 export interface ResumeState {
     mainContentIndex: string
-    workExperienceIndex: number
+    workExperienceItemIndex: number
+    educationItemIndex: number
 }
 
 const resumeSlice = createSlice({
     name: 'resume',
     initialState: {
         mainContentIndex: '',
-        workExperienceIndex: 0,
+        workExperienceItemIndex: 0,
+        educationItemIndex: 0,
     } as ResumeState,
     reducers: {
         switchMainContentIndex(
@@ -21,19 +23,27 @@ const resumeSlice = createSlice({
         },
         switchWorkExperienceIndex(
             state: ResumeState,
-            pageNameAction: PayloadAction<ResumeState['workExperienceIndex']>
+            workExperienceItemIndex: PayloadAction<ResumeState['workExperienceItemIndex']>
         ) {
-            state.workExperienceIndex = pageNameAction.payload
+            state.workExperienceItemIndex = workExperienceItemIndex.payload
+        },
+        switchEducationIndex(
+            state: ResumeState,
+            educationItemIndex: PayloadAction<ResumeState['educationItemIndex']>
+        ) {
+            state.educationItemIndex = educationItemIndex.payload
         },
     },
 })
 
 export const selectResume = {
     mainContentIndex: (state: RootState) => state.resume.mainContentIndex,
-    workExperienceIndex: (state: RootState) => state.resume.workExperienceIndex,
+    workExperienceItemIndex: (state: RootState) => state.resume.workExperienceItemIndex,
+    educationItemIndex: (state: RootState) => state.resume.educationItemIndex,
 } as const
 export const operateResume = {
     switchMainContentIndex: resumeSlice.actions.switchMainContentIndex,
     switchWorkExperienceIndex: resumeSlice.actions.switchWorkExperienceIndex,
+    switchEducationIndex: resumeSlice.actions.switchEducationIndex,
 }
 export const resumeSliceReducer = resumeSlice.reducer

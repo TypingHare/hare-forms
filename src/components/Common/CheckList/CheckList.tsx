@@ -5,7 +5,7 @@ export function CheckList(props: CheckListProps) {
     const { items, ...otherProps } = props
 
     return (
-        <List sx={{ padding: '0 1rem' }} {...otherProps}>
+        <List {...otherProps}>
             {items.map((item, index) => (
                 <ListItem key={index} sx={{ padding: '0.25em 0' }}>
                     {item}

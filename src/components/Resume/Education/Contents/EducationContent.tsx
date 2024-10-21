@@ -1,6 +1,6 @@
 import { Box, BoxProps, Typography, useTheme } from '@mui/material'
 
-export function WorkExperienceContent(props: WorkExperienceContentProps) {
+export function EducationContent(props: EducationContentProps) {
     const { title, children, ...otherProps } = props
     const { palette } = useTheme()
 
@@ -40,6 +40,6 @@ export function WorkExperienceContent(props: WorkExperienceContentProps) {
     )
 }
 
-export interface WorkExperienceContentProps extends BoxProps {
+export interface EducationContentProps extends BoxProps {
     title?: string
 }

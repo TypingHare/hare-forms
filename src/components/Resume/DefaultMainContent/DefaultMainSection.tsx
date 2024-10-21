@@ -1,6 +1,7 @@
 import { IntroductionSection } from '../MainContent/IntroductionSection.tsx'
 import { Box, BoxProps } from '@mui/material'
 import { WorkExperience } from '../WorkExperience'
+import { Education } from '../Education'
 
 export function DefaultMainSection(props: BoxProps) {
     return (
@@ -8,6 +9,7 @@ export function DefaultMainSection(props: BoxProps) {
             <IntroductionSection />
             <Box height="1.5rem" />
             <WorkExperience />
+            <Education />
         </Box>
     )
 }

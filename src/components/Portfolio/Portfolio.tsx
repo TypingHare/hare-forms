@@ -3,7 +3,7 @@ import { NavigationReserve } from '../NavigationBar'
 import { Page } from '../Page'
 import { ResponsiveContainer } from '../Common/ResponsiveContainer'
 
-export function Works() {
+export function Portfolio() {
     return (
         <Page>
             <NavigationReserve />
