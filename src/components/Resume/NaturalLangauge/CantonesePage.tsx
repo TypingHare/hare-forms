@@ -12,7 +12,7 @@ export function CantonesePage() {
                     contexts.
                 </span>
             ),
-            con: <span>Have a standard Guangzhou accent, not a Hong Kong accent</span>,
+            con: <span>Have a standard Guangzhou accent, not a Hong Kong accent.</span>,
         },
         {
             title: 'Writing',

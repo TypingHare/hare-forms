@@ -44,7 +44,10 @@ export function TypeScriptPage() {
                 <span>
                     Developed several simple libraries, complete with full test coverage, and
                     published them to{' '}
-                    <a href="https://www.npmjs.com/settings/typinghare/packages">npm</a>.
+                    <a href="https://www.npmjs.com/~typinghare" target="_blank">
+                        npm
+                    </a>
+                    .
                 </span>
             ),
             con: (
@@ -63,6 +66,7 @@ export function TypeScriptPage() {
                 TypeScript, such as <a href="https://github.com/typinghare/wander">wander</a> and{' '}
                 <a href="https://github.com/typinghare/trick">trick</a>.
             </Typography>
+            
             <ProsAndConsTable rows={rows} />
         </ResumeMainPage>
     )

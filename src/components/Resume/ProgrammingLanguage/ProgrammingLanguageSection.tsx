@@ -17,7 +17,7 @@ export function ProgrammingLanguageSection() {
                     <LanguageCell
                         label={item.language}
                         progress={item.progress}
-                        mainPageIndex={'Programming_Language/' + item.language}
+                        mainPageIndex={'Programming_Language/' + item.language.replace(/ /g, '_')}
                     />
                 ))}
             </Box>

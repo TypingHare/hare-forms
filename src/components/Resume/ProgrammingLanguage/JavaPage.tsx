@@ -12,7 +12,10 @@ export function JavaPage() {
                     annotations.
                 </span>
             ),
-            con: <span>Limited experience with multithreading and concurrency components.</span>,
+        },
+        {
+            title: 'multithreading',
+            con: <span>Almost no experience with multithreading and concurrency components.</span>,
         },
         {
             title: 'Spring',
